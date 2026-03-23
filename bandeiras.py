@@ -218,4 +218,21 @@ t.goto(-300,50)
 t.pd()
 ret2('red')
 
+t.pu()
+t.goto(-50,10)
+t.pd()
+t.color('black')
+t.begin_fill()
+t.fillcolor('black')
+for _ in range(5):
+   t.fd(40)
+   t.lt(72)
+   t.fd(40)
+   t.rt(144)
+
+t.end_fill()
+
+sleep(2)
+t.clear()
+
 mainloop()
